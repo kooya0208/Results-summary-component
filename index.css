@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&family=Hanken+Grotesk:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    display: flex;
+    width: 600px;
+    height: 400px;
+    border-radius: 5%;
+    background-color:white;
+    box-shadow: 2px 4px 10px gainsboro;
+
+}
+
+@media screen and (max-width: 720px){
+    .card {
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+        box-shadow: 0 0;
+    }
+}
+
+/* 左側 */
+.card-left{
+    width: 50%;
+    padding: 5% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5%;
+    color: #C0B8FF;
+    background: -moz-linear-gradient(bottom, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+    background: -webkit-linear-gradient(bottom, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+    background: linear-gradient(to top, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+}
+
+@media screen and (max-width: 720px){
+    /* 上側 */
+    .card-left{
+        width: 100%;
+        padding: 5% 0;
+        border-radius: 0 0 40px 40px;
+    } 
+}
+
+.title{
+    margin:0 7%;
+    font-size: 1.3rem;
+}
+
+.score{
+    width: 150px;
+    height: 150px;
+    margin: 8% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: -moz-linear-gradient(top, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    background: -webkit-linear-gradient(top, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+}
+
+.numerator{
+    font-size: 3.5rem;
+    color: white;
+    font-weight: bold;
+}
+
+.demominater{
+    font-size: 0.8rem;
+}
+
+.evaluation{
+    font-size: 1.7rem;
+    color: white;
+}
+
+.sentence{
+    font-size: 0.9rem;
+    padding: 5% 15%;
+    text-align: center;
+}
+@media screen and (max-width: 720px){
+    /* 下側 */
+    .sentence{
+        font-size: 1rem;
+    }
+}
+
+/* 右側 */
+.card-right{
+    width: 50%;
+    padding: 5% 0; 
+}
+@media screen and (max-width: 720px){
+    /* 下側 */
+    .card-right{
+        width: 100%; 
+    }
+}
+
+.summary{
+    padding: 0 9%;
+    font-size: 1.3rem;   
+}
+@media screen and (max-width: 720px){
+    /* 下側 */
+    .summary{
+        padding: 3% 8%;
+    }
+}
+
+.breakdown{
+    padding: 0 8%;
+}
+@media screen and (max-width: 720px){
+    /* 下側 */
+    .breakdown{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.skills{
+    display: flex;
+    justify-content: space-between;
+    margin: 14px;
+    font-size: 1.1rem;
+    padding: 10px;
+    border-radius: 5px;
+}
+@media screen and (max-width: 720px){
+    /* 下側 */
+    .skills{
+        margin: 10px;
+        border-radius: 10px;
+        font-size: 1.2rem;
+        width: 90%;
+        padding: 5%;
+    }
+}
+
+.flex-box {
+    display: flex;
+}
+
+.skills > p{
+    font-size: 0.9rem;
+    color: gray;
+}
+@media screen and (max-width: 720px){
+    /* 下側 */
+    .skills > p{
+        font-size: 1.1rem;
+    }
+}
+
+.skills > img{
+    margin: 0 5px;
+}
+
+.categry{
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    margin: 0 6px;
+    width: 50%;
+}
+@media screen and (max-width: 720px){
+    /* 下側 */
+    .categry{
+        font-size: 1.1rem;
+    }
+}
+
+.red{
+    color: hsl(0, 100%, 67%);
+}
+.yellow{
+    color: hsl(39, 100%, 56%);
+}
+.green{
+    color: hsl(166, 100%, 37%);
+}
+.purple{
+    color: hsl(234, 85%, 45%);
+}
+
+
+.reaction{
+    background-color: #FFF6F5;
+}
+.memory{
+    background-color: #FFFBF2;
+}
+.verbal{
+    background-color: #F2FBFA;
+}
+.visual{
+    background-color: #F3F3FD;
+}
+
+strong{
+    color: #000;
+    font-weight: bold;
+}
+
+
+.button{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+    margin: 15% 5%;
+    color: white;
+    border-radius: 50px;
+    background-color: hsl(224, 30%, 27%);
+}
+
+.button:hover{
+    background: -moz-linear-gradient(bottom, hsl(241, 81%, 54%), hsla(241, 72%, 46%, 0)); 
+    background: -webkit-linear-gradient(bottom, hsl(241, 81%, 54%), hsla(241, 72%, 46%, 0));
+    background: linear-gradient(to top, hsl(241, 81%, 54%), hsla(241, 72%, 46%, 0.747));
+}
+@media screen and (max-width: 720px){
+    /* 下側 */
+    .button{
+        width: 90%;
+        margin: 15px;
+    }
+}
